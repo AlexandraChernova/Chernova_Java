@@ -1,6 +1,5 @@
 package task.third;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ThirdTask {   //Составить алгоритм: на входе есть числовой массив, необходимо вывести элементы массива кратные 3
@@ -12,7 +11,6 @@ public class ThirdTask {   //Составить алгоритм: на вход�
         for (int element : a) {
             System.out.print("Введите " + (i + 1) + "-й элемент массива: ");
             a[i] = scanner.nextInt();
-            //System.out.println(a[i]);
             i++;
         }
         for (int element : a) {
