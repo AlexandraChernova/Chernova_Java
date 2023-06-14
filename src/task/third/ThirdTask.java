@@ -17,8 +17,7 @@ public class ThirdTask {   //Составить алгоритм: на вход�
 
         for (double i : array) {
             if (i % 3 == 0) {
-                System.out.println("Числа, кратные 3:");
-                System.out.println(i + " ");
+                System.out.println("Число, кратное 3: " + i + " ");
             }
         }
     }
