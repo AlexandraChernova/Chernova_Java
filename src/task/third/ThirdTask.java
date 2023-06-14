@@ -1,25 +1,25 @@
 package task.third;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ThirdTask {   //Составить алгоритм: на входе есть числовой массив, необходимо вывести элементы массива кратные 3
-    public static void main(String[] args) {
-        int[] a = new int[5];
-        int i = 0;
+    public static void main(String[] args) throws ArrayIndexOutOfBoundsException {
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите размер массива: ");
+        double size = scanner.nextDouble();
+        double array[] = new double[(int) size];
+        System.out.print("Введите числовые значения: ");
 
-        for (int element : a) {
-            System.out.print("Введите " + (i + 1) + "-й элемент массива: ");
-            a[i] = scanner.nextInt();
-            i++;
+        for (double i = 0; i < size; i++) {
+            array[(int) i] = scanner.nextDouble();
         }
-        for (int element : a) {
-            if (element % 3 == 0) {
-                System.out.print(element + " ");
+
+        for (double i : array) {
+            if (i % 3 == 0) {
+                System.out.println("Числа, кратные 3:");
+                System.out.println(i + " ");
             }
         }
-
     }
 }
-
-

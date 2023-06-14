@@ -6,7 +6,7 @@ public class FirstTask { //Составить алгоритм: если вве�
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите любое число: ");
-        int number = scanner.nextInt();
+        double number = scanner.nextDouble();
 
         if (number >= 7) {
             System.out.println("Привет!");

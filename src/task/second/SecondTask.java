@@ -6,7 +6,7 @@ public class SecondTask { //Составить алгоритм: если вве
                           // то вывести “Привет, Вячеслав”, если нет, то вывести "Нет такого имени"
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Введите имя: ");
+        System.out.print("Введите имя:  ");
         String name = scanner.nextLine();
 
         if (name.equals("Вячеслав")) {
